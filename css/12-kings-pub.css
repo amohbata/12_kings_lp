@@ -313,3 +313,7 @@ i {
 .footer-title {
     color: #F6F6B4;
 }
+
+.text-muted a {
+    color: #F6F6B4;
+}
