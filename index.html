@@ -40,7 +40,7 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#specials">Specials</a>
+                <a href="#specials">Daily Specials</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -50,10 +50,11 @@
 
     <!-- Header -->
     <header class="header">
+        <img class="header-image" src="img/logo-hi-res.jpg"
     </header>
 
     <!-- About -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5 text-center about-text">
@@ -63,13 +64,13 @@
                 <div class="col-md-7">
                     <div class="captioned-slider">
                         <div class="slide" id="slide-0">
-                            <span class="feature-text">44 Beers on Tap</span>
+                            <!-- <span class="feature-text">44 Beers on Tap</span> -->
                         </div>
                         <div class="slide" id="slide-1">
-                            <span class="feature-text">Chicken Wings</span>
+                            <!-- <span class="feature-text">Chicken Wings</span> -->
                         </div>
                         <div class="slide" id="slide-2">
-                            <span class="feature-text">Ribs</span>
+                            <!-- <span class="feature-text">Ribs</span> -->
                         </div>
                     </div>
                 </div>
@@ -79,7 +80,7 @@
 
 
     <!-- specials -->
-    <section class="specials">
+    <section id="specials" class="specials">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -167,17 +168,18 @@
 
     <!-- Map -->
     <section class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+<!--         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> -->
+        <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=395%20Kingsway%2C%20Vancouver%2C%20BC%2C%20Canada&key=AIzaSyDK_8H6wejJ9M93sDSGEh-foJ8t26X03Uc"></iframe>
         <br />
-        <small>
+<!--         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
+        </small> -->
         </iframe>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div id="contact" class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong class="footer-title">12 Kings Pub</strong>
@@ -213,44 +215,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+    <!-- Custom JavaScript -->
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-
-    //captioned-slider
-    $(".captioned-slider").on("scroll", function() {
-        console.log("click-felt")
-        $(".slide").css({"background-position": $(this).scrollLeft()/6-100+ "px 0"});
-    });
-    </script>
-
+    <script src="js/12-kings-pub.js"></script>
 </body>
-
 </html>
