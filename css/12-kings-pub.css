@@ -271,11 +271,11 @@ hr.small {
     background-color: #333333;
     color: #bbbbbb;
     position: relative;
-    min-height: 450px;
+    min-height: 525px;
 }
 
 .about-text {
-    padding: 3% 20px;
+    padding: 0 3% 0;
 }
 
 .about-text-description {
@@ -290,12 +290,23 @@ hr.small {
 
 .craft-specials-container {
     height: 300px;
-    padding: 30px 20px;
+    padding: 0 3% 0;
 }
 
 .craft-specials-container a {
     color: #F6F6B4;
     text-align: center;
+}
+
+.beer-list-link {
+    padding-left: 12px;
+}
+
+.craft-specials-container iframe {
+    margin: 5% 2% 0;
+    width: 90%;
+    height: 100%;
+    frameborder: 1;
 }
 
 .about-title, .beer-specials-title {
@@ -314,15 +325,8 @@ hr.small {
     min-height: 200px;
     background-color: #444444;
     margin-top: -20px;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
-}
-
-@media(max-width:768px) {
-    .special-box {
-        width: 487px;
-        margin: auto;
-    }
 }
 
 .specials-three-item-row {
@@ -374,20 +378,15 @@ hr.small {
 .map .google-map {
     pointer-events: none;
     height: 420px;
-    width: 100%;
-    margin: 8% 5%;
+    width: 520px;
+    display: block;
+    margin: 8% auto;
     border: 3px solid #F6F6B4;
 }
 
 #twitter-widget-0 {
-    margin: 8% 5% !important;
-    float: right !important;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+    margin: 8% auto !important;
+    display: block !important;
 }
 
 /* Footer */
@@ -416,4 +415,52 @@ i {
 
 .text-muted a {
     color: #F6F6B4;
+}
+
+/* Additional media queries for smaller screen sizes */
+
+@media(max-width: 991px) {
+    .map {
+        min-height: 1025px;
+    }
+
+    #twitter-widget-0 {
+        margin: 0 auto !important;
+        display: block !important;
+        float: none !important;
+    }
+
+    .special-text {
+        font-size: 1em;
+    }
+
+    .special-box {
+        padding: 20px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .about {
+        min-height: 775px;
+    }
+
+    .about-text {
+        padding: 0 8% 0;
+    }
+
+    .craft-specials-container {
+        padding: 0 3% 0;
+    }
+
+    .special-box, .img-special {
+        width: 60%;
+        margin: auto;
+    }
+
+    .specials-three-item-row {
+        margin-left: 0;
+    }
+    .craft-specials-container {
+        padding: 3%;
+    }
 }
