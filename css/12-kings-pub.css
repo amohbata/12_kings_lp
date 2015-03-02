@@ -168,14 +168,100 @@ hr.small {
     display: table;
     position: relative;
     width: 100%;
-    height: auto;
-    background-color: #231f20;
+    height: 550px;
+    background-color: rgb(35, 31, 32);
 }
 
 .header-image {
     margin: auto;
     display: block;
-    height: 145px;
+    height: 115px;
+}
+
+.slider-content-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+}
+
+.slide {
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    white-space: normal;
+    /*position: absolute;*/
+/*    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+}
+
+#slide-0 {
+    background-image: url("../img/pub_1.jpg");
+}
+
+#slide-1 {
+    background-image: url("../img/pub_2.jpg");
+}
+
+#slide-2 {
+    background-image: url("../img/pub_3.jpg");
+}
+
+.vertical-line {
+    border-left: 2px solid #bbbbbb;
+    display: inline;
+}
+
+.slider-nav-links {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    bottom: 20px;
+}
+
+.slider-nav-links ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.slider-nav-links ul li {
+    float: left;
+    text-align: center;
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #CCCCCC;
+    padding: 5px;
+    border-radius: 50%;
+    border: black 5px solid;
+}
+
+.slider-nav-links ul li:hover {
+    background-color: #F6F6B4;
+}
+
+.slider-nav-links ul li.active {
+    background-color: #333333;
+    color: #FFFFFF;
+    outline-width: 7px;
+}
+
+.slider-nav-links ul li.active:hover {
+    background-color: #484848;
+    color: #FFFFFF;
 }
 
 /* About */
@@ -184,60 +270,48 @@ hr.small {
     padding: 50px 0;
     background-color: #333333;
     color: #bbbbbb;
+    position: relative;
+    min-height: 525px;
 }
 
 .about-text {
-    padding: 60px 20px;
+    padding: 0 3% 0;
 }
 
 .about-text-description {
     font-size: 1.15em;
+    padding-top: 25px;
 }
 
-.about-title {
+.about-title{
     color: #F6F6B4;
+    text-align: center;
 }
 
-.beer-specials {
+.craft-specials-container {
     height: 300px;
-    width: 200px;
+    padding: 0 3% 0;
 }
 
-/* Featured Items */
-
-.captioned-slider {
-    width: 100%;
-    overflow: hidden;
+.craft-specials-container a {
+    color: #F6F6B4;
+    text-align: center;
 }
 
-.captioned-slider {
-    height: 300px;
-    width: 450px;
-    overflow-x: scroll;
-    margin: auto;
+.beer-list-link {
+    padding-left: 12px;
 }
 
-.slide {
-    height: 300px;
-    width: 450px;
+.craft-specials-container iframe {
+    margin: 5% 2% 0;
+    width: 90%;
+    height: 100%;
+    frameborder: 1;
 }
 
-#slide-0 {
-    background-image: url(../img/beers-on-tap.jpg);
-}
-
-#slide-1 {
-    background-image: url(../img/portfolio-2.jpg);
-}
-
-#slide-2 {
-    background-image: url(../img/portfolio-3.jpg);
-}
-
-/*holder width should be 100% * the number of slides*/
-
-.holder {
-    width: 300%;
+.about-title, .beer-specials-title {
+    color: #F6F6B4;
+    text-align: center;
 }
 
 /* Specials */
@@ -251,15 +325,8 @@ hr.small {
     min-height: 200px;
     background-color: #444444;
     margin-top: -20px;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
-}
-
-@media(max-width:768px) {
-    .special-box {
-        width: 487px;
-        margin: auto;
-    }
 }
 
 .specials-three-item-row {
@@ -303,17 +370,23 @@ hr.small {
 /* Map */
 
 .map {
-    height: 420px;
+    height: 520px;
+    width: 100%;
+    background-color: #444444;
 }
 
-.map iframe {
+.map .google-map {
     pointer-events: none;
+    height: 420px;
+    width: 520px;
+    display: block;
+    margin: 8% auto;
+    border: 3px solid #F6F6B4;
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+#twitter-widget-0 {
+    margin: 8% auto !important;
+    display: block !important;
 }
 
 /* Footer */
@@ -336,6 +409,58 @@ i {
     color: #F6F6B4;
 }
 
+.text-muted {
+    color: rgb(187, 187, 187);
+}
+
 .text-muted a {
     color: #F6F6B4;
+}
+
+/* Additional media queries for smaller screen sizes */
+
+@media(max-width: 991px) {
+    .map {
+        min-height: 1025px;
+    }
+
+    #twitter-widget-0 {
+        margin: 0 auto !important;
+        display: block !important;
+        float: none !important;
+    }
+
+    .special-text {
+        font-size: 1em;
+    }
+
+    .special-box {
+        padding: 20px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .about {
+        min-height: 775px;
+    }
+
+    .about-text {
+        padding: 0 8% 0;
+    }
+
+    .craft-specials-container {
+        padding: 0 3% 0;
+    }
+
+    .special-box, .img-special {
+        width: 60%;
+        margin: auto;
+    }
+
+    .specials-three-item-row {
+        margin-left: 0;
+    }
+    .craft-specials-container {
+        padding: 3%;
+    }
 }
