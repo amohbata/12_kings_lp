@@ -1,0 +1,132 @@
+body {
+    font-family: "brandon-grotesque-n7", "brandon-grotesque" ,Helvetica,Arial,sans-serif;
+}
+
+.menu-section {
+    position: relative;
+    height: 450px;
+    margin: 0;
+}
+
+.menu-container {
+    position: relative;
+    padding: 50px 70px;
+    background-color: #333333;
+}
+
+.tabs {
+    width:100%;
+    display:inline-block;
+    margin: 0 0 -17px -45px;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+    /*display: inline-block;*/
+}
+
+    .tab-links a {
+        width: 112px;
+        text-align: center;
+        padding: 9px 15px;
+        display: inline-block;
+        border-radius: 3px 3px 0px 0px;
+        background: #231f20;
+        font-size: 16px;
+        color: rgb(187, 187, 187);
+        transition: all linear 0.15s;
+    }
+
+    .tab-links a:hover {
+        background: #fff;
+        color: #ccc;
+        text-decoration: none;
+    }
+
+li.active a, li.active a:hover {
+    background: #231f20;
+    color: #F6F6B4;
+    text-decoration: none;
+    border: 1px #f6f6b4 solid;
+    border-bottom: 0;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+    background: #231f20;
+    border: 1px #f6f6b4 solid;
+    color: #cccccc;
+    /*height: 550px;*/
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+
+.tab .menu-page-title {
+    text-align: center;
+}
+
+.heading-line {
+    background: url('../img/menu-divider.png') no-repeat top center;
+    height: 36px;
+    margin: 20px auto 0;
+}
+
+/*----- Menu Items -----*/
+
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+}
+
+.menu-item-text {
+    display: inline-block;
+    float: left;
+    margin-left: 25px;
+    width: 70%;
+}
+
+.menu-item-title {
+    font-size: 20px;
+}
+
+.menu-item-price {
+    display: inline-block;
+    float: right;
+    padding: 24px;
+    line-height: 0;
+    font-size: 18px;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.menu-item-wrapper {
+    padding: 20px 30px;
+}
