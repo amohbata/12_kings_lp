@@ -64,12 +64,11 @@ li.active a, li.active a:hover {
 /*----- Content of Tabs -----*/
 .tab-content {
     padding: 15px;
-    border-radius: 3px;
+    border-radius: 0 3px 3px 3px;
     box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
     background: #231f20;
     border: 1px #f6f6b4 solid;
     color: #cccccc;
-    /*height: 550px;*/
 }
 
 .tab {
