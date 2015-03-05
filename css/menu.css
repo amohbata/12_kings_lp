@@ -4,7 +4,7 @@ body {
 
 .menu-section {
     position: relative;
-    height: 450px;
+    /*height: 450px;*/
     margin: 0;
 }
 
@@ -102,19 +102,24 @@ li.active a, li.active a:hover {
     display: inline-block;
     float: left;
     margin-left: 25px;
-    width: 70%;
+    width: 80%;
 }
 
 .menu-item-title {
     font-size: 20px;
+    float: left;
+}
+
+.menu-item-description {
+    clear: both;
 }
 
 .menu-item-price {
     display: inline-block;
     float: right;
-    padding: 24px;
-    line-height: 0;
+    padding: 4px;
     font-size: 18px;
+    line-height: 20px;
 }
 
 .clearfix:after {
@@ -126,5 +131,79 @@ li.active a, li.active a:hover {
 }
 
 .menu-item-wrapper {
-    padding: 20px 30px;
+    padding: 3%;
+}
+
+@media(max-width: 876px) {
+    .menu-container {
+        padding: 50px 30px;
+    }
+}
+
+@media(max-width: 758px) {
+    .menu-item-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .menu-item-wrapper {
+        padding: 3% 0;
+    }
+
+    .menu-item-price {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .menu-item-title {
+        font-size: 14px;
+    }
+
+    .menu-item-description {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 758px) {
+    .menu-item-image {
+        width: 60px;
+        height: 60px;
+        padding-top: 5px;
+    }
+
+    .menu-item-text {
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 468px) {
+    .menu-item-text {
+        width: 75%;
+        margin-left: 10px;
+    }
+
+    .menu-container {
+        padding: 50px 10px;
+    }
+}
+
+@media(max-width: 468px) {
+    .tab-links a {
+        width: 90px;
+        padding: 9px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 360px) {
+
+    .menu-item-text {
+        width: 70%;
+    }
+
+    .tab-links a {
+        width: 75px;
+        padding: 5px;
+        font-size: 14px;
+    }
 }

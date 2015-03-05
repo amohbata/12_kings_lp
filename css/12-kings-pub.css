@@ -384,6 +384,10 @@ hr.small {
     border: 3px solid #F6F6B4;
 }
 
+.google-map iframe {
+    display: block;
+}
+
 #twitter-widget-0 {
     margin: 8% auto !important;
     display: block !important;
@@ -460,7 +464,33 @@ i {
     .specials-three-item-row {
         margin-left: 0;
     }
+
     .craft-specials-container {
         padding: 3%;
     }
+
+    .map .google-map  {
+        width: 100%;
+    }
 }
+
+@media(max-width: 598px) {
+    .about {
+        min-height: 825px;
+    }
+
+    .map {
+        min-height: 975px;
+    }
+}
+
+@media(max-width: 440px) {
+    .about-text-description {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 440px) {
+    .about {
+        min-height: 875px;
+    }
