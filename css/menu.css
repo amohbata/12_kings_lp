@@ -2,9 +2,12 @@ body {
     font-family: "brandon-grotesque-n7", "brandon-grotesque" ,Helvetica,Arial,sans-serif;
 }
 
+.header {
+    height: auto;
+}
+
 .menu-section {
     position: relative;
-    /*height: 450px;*/
     margin: 0;
 }
 
@@ -21,6 +24,7 @@ body {
 }
 
 /*----- Tab Links -----*/
+
 /* Clearfix */
 .tab-links:after {
     display:block;
