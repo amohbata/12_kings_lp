@@ -198,11 +198,6 @@ hr.small {
     background-repeat: no-repeat;
     background-size: cover;
     white-space: normal;
-    /*position: absolute;*/
-/*    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;*/
 }
 
 #slide-0 {
@@ -514,6 +509,15 @@ i {
     .map .google-map  {
         width: 70%;
     }
+
+    .special-box {
+        padding: 1%;
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media(max-width: 598px) {
@@ -571,6 +575,7 @@ i {
     .special-text {
         font-size: 0.85em;
     }
+
 }
 
 @media(max-width: 333px) {
