@@ -1,0 +1,18 @@
+body {
+    font-family: "brandon-grotesque-n7", "brandon-grotesque" ,Helvetica,Arial,sans-serif;
+}
+
+.craft-beer-container {
+    position: relative;
+    padding: 50px 20px;
+    background-color: #333333;
+}
+
+iframe.craft-beer-frame {
+  margin: auto;
+  display: block;
+  height: 1960px;
+  width: 90%;
+  margin-top: 45px;
+  margin-bottom: 45px
+}

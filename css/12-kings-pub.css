@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
 html,
 body {
     width: 100%;
@@ -6,6 +8,19 @@ body {
 
 body {
     font-family: "brandon-grotesque-n7", "brandon-grotesque" ,Helvetica,Arial,sans-serif;
+}
+
+h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 0.9px;
+}
+
+h3 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.9px;
 }
 
 .text-vertical-center {
@@ -22,6 +37,10 @@ body {
 }
 
 /* Custom Button Styles */
+
+.btn-craft {
+    color: white;
+}
 
 .btn-dark {
     border-radius: 0;
@@ -59,7 +78,9 @@ hr.small {
 
 .nav-bar {
     text-align: center;
-    font-size: 1.3em;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 0.5px;
     margin: 10px auto 15px;
 }
 
@@ -262,11 +283,11 @@ hr.small {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 50px 0 0;
     background-color: #333333;
     color: #bbbbbb;
     position: relative;
-    min-height: 525px;
+    /*min-height: 525px;*/
 }
 
 .about-text {
@@ -284,12 +305,12 @@ hr.small {
 }
 
 .craft-specials-container {
-    height: 300px;
+    margin: 60px;
     padding: 0 3% 0;
 }
 
 .craft-specials-container a {
-    color: #F6F6B4;
+    color: white;
     text-align: center;
 }
 
@@ -381,17 +402,21 @@ hr.small {
 /* Map */
 
 .map {
-    height: 520px;
+    height: 320px;
     width: 100%;
     background-color: #444444;
 }
 
+.map .col-md-12 {
+    width: 100%;
+    padding: 0;
+}
+
 .map .google-map {
     pointer-events: none;
-    height: 420px;
-    width: 520px;
+    height: 320px;
+    width: 100%;
     display: block;
-    margin: 8% auto;
     border: 3px solid #F6F6B4;
 }
 
@@ -468,7 +493,7 @@ i {
 
 @media(max-width: 770px) {
     .about {
-        min-height: 775px;
+        /*min-height: 775px;*/
     }
 
     .about-text {
@@ -527,7 +552,7 @@ i {
     }
 
     .about {
-        min-height: 825px;
+        /*min-height: 825px;*/
     }
 
     .special-title {
@@ -569,7 +594,7 @@ i {
     }
 
     .about {
-        min-height: 875px;
+        /*min-height: 875px;*/
     }
 
     .special-text {
