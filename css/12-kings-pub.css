@@ -189,7 +189,7 @@ hr.small {
     display: table;
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 650px;
     background-color: rgb(35, 31, 32);
 }
 
@@ -214,7 +214,7 @@ hr.small {
 
 .slide {
     float: left;
-    width: 33.3%;
+    width: 33.333333333%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,15 +222,15 @@ hr.small {
 }
 
 #slide-0 {
-    background-image: url("../img/pub_1.jpg");
+    background-image: url("../img/header_4.jpg");
 }
 
 #slide-1 {
-    background-image: url("../img/pub_2.jpg");
+    background-image: url("../img/header_2.jpg");
 }
 
 #slide-2 {
-    background-image: url("../img/pub_3.jpg");
+    background-image: url("../img/header_3.jpg");
 }
 
 .vertical-line {
