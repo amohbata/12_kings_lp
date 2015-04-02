@@ -102,6 +102,13 @@ li.active a, li.active a:hover {
     float: left;
 }
 
+.menu-item-text-no-image {
+    display: inline-block;
+    float: left;
+    margin-left: 128px;
+    width: 80%;
+}
+
 .menu-item-text {
     display: inline-block;
     float: left;
