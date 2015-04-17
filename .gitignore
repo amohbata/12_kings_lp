@@ -33,3 +33,6 @@ tramp
 
 # cask packages
 .cask/
+
+#OS X per-system folder customization
+.DS_Store
