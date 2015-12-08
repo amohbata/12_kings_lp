@@ -17,6 +17,28 @@ body {
     background-color: #333333;
 }
 
+.content {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.embed-container {
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%; /* play with this until right */
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+}
+
+.embed-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .tabs {
     width:100%;
     display:inline-block;
